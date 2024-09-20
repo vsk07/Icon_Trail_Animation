@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 100vh;
+    /* background-color: black; */
+    background-image: url("https://i.pinimg.com/originals/88/19/67/8819676a326ba31c66eee96325513927.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+span{
+    background: url("https://cdn1.iconfinder.com/data/icons/flags-of-different-countries/450/17-1024.png");
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    background-size:cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+
+    }
+}
